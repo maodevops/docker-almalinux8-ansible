@@ -56,7 +56,7 @@ jobs:
             type=ref,event=branch
             type=ref,event=tag
             type=ref,event=pr
-            type=raw,value=${{ matrix.base_image_tag }}
+            type=raw,prefix=,value=${{ matrix.base_image_tag }}
             type=semver,pattern={{ version }}
 
       - name: Login to DockerHub
