@@ -1,5 +1,5 @@
 #
-# Dockerfile used to build RockyLinux 8 images for testing Ansible
+# Dockerfile used to build AlmaLinux 8 images for testing Ansible
 #
 # syntax = docker/dockerfile:1
 
@@ -33,4 +33,5 @@ RUN dnf -y install rpm dnf-plugins-core ; \
   pip3 install --no-cache-dir --upgrade pip ;
 
 VOLUME ["/sys/fs/cgroup"]
+
 CMD ["/usr/lib/systemd/systemd"]
